@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "BlazorApp/1.0.0": {
+      "BlazorApp/1.0.1-preview.0.3": {
         "dependencies": {
           "MinVer": "4.3.0"
         },
@@ -18,7 +18,7 @@
     }
   },
   "libraries": {
-    "BlazorApp/1.0.0": {
+    "BlazorApp/1.0.1-preview.0.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

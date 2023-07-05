@@ -58,12 +58,12 @@ jobs:
         run: dotnet build ${{ env.PROJECT_PATH }} --configuration Release --no-restore
 
       - name: "Pack"
-        run: dotnet pack ${{ env.PROJECT_PATH }} --configuration Release --no-build --no-restore --output ${{env.OUTPUT_DIRECTORY}}
+        run: dotnet pack ${{ env.PROJECT_PATH }} --configuration Release --no-build --no-restore --output ${{ env.OUTPUT_DIRECTORY }}
 
       - name: "Archive Artefacts"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
-          name: "ubuntu-latest"
+          name: "artifact"
           path: ${{ env.OUTPUT_DIRECTORY }}/*.nupkg
           
   push-github-packages:
