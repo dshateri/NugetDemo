@@ -1,11 +1,61 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "MinVer/4.3.0": {
+        "type": "package",
+        "build": {
+          "build/MinVer.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MinVer.targets": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MinVer/4.3.0": {
+      "sha512": "YNVAW3loCFW4kTwensApaZUl+7xREK75QQNOFSbsbXx2sCSm9/IHBjUHsJGn3u0UA5r/sAqrdYBNUlOFfLhUrA==",
+      "type": "package",
+      "path": "minver/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/MinVer.targets",
+        "buildMultiTargeting/MinVer.targets",
+        "minver.4.3.0.nupkg.sha512",
+        "minver.nuspec",
+        "minver.png",
+        "minver/net6.0/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/net6.0/MinVer",
+        "minver/net6.0/MinVer.Lib.dll",
+        "minver/net6.0/MinVer.deps.json",
+        "minver/net6.0/MinVer.dll",
+        "minver/net6.0/MinVer.runtimeconfig.json",
+        "minver/net6.0/NuGet.Versioning.dll",
+        "minver/net7.0/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/net7.0/MinVer",
+        "minver/net7.0/MinVer.Lib.dll",
+        "minver/net7.0/MinVer.deps.json",
+        "minver/net7.0/MinVer.dll",
+        "minver/net7.0/MinVer.runtimeconfig.json",
+        "minver/net7.0/NuGet.Versioning.dll",
+        "minver/netcoreapp3.1/McMaster.Extensions.CommandLineUtils.dll",
+        "minver/netcoreapp3.1/MinVer",
+        "minver/netcoreapp3.1/MinVer.Lib.dll",
+        "minver/netcoreapp3.1/MinVer.deps.json",
+        "minver/netcoreapp3.1/MinVer.dll",
+        "minver/netcoreapp3.1/MinVer.runtimeconfig.json",
+        "minver/netcoreapp3.1/NuGet.Versioning.dll",
+        "minver/netcoreapp3.1/System.ComponentModel.Annotations.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "MinVer >= 4.3.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\dshat\\.nuget\\packages\\": {},
@@ -14,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Training\\BlazorDemoApp\\BlazorApp\\BlazorApp.csproj",
+      "projectUniqueName": "D:\\Training\\NugetDemo\\BlazorApp\\BlazorApp.csproj",
       "projectName": "BlazorApp",
-      "projectPath": "D:\\Training\\BlazorDemoApp\\BlazorApp\\BlazorApp.csproj",
+      "projectPath": "D:\\Training\\NugetDemo\\BlazorApp\\BlazorApp.csproj",
       "packagesPath": "C:\\Users\\dshat\\.nuget\\packages\\",
-      "outputPath": "D:\\Training\\BlazorDemoApp\\BlazorApp\\obj\\",
+      "outputPath": "D:\\Training\\NugetDemo\\BlazorApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -42,6 +92,9 @@
         }
       },
       "warningProperties": {
+        "noWarn": [
+          "NU5105"
+        ],
         "warnAsError": [
           "NU1605"
         ]
@@ -50,6 +103,13 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "MinVer": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

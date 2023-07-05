@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zZYI+XeN+oNxZc3CT7VwvwcH/1a4fU6zZ0ZpW9sGabYnnLqlO/MapWtXwZTQ0Wmo3vu5PsPxNMdXUXptwIj1ug==",
+  "dgSpecHash": "rimIGsrmqIOYLyIy/e9SP25nYfbvOdOXIsqDqMYoJMfxEVKuLUVkUaKukvt+KzMzmyCUgBc+5I7BFj6eljpXuQ==",
   "success": true,
-  "projectFilePath": "D:\\Training\\BlazorDemoApp\\BlazorApp\\BlazorApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Training\\NugetDemo\\BlazorApp\\BlazorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dshat\\.nuget\\packages\\minver\\4.3.0\\minver.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }
