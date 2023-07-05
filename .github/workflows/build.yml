@@ -64,7 +64,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: "ubuntu-latest"
-          path: ${{env.OUTPUT_DIRECTORY}}
+          path: ${{env.OUTPUT_DIRECTORY}}/*.nupkg
           
   push-github-packages:
     name: "Push GitHub Packages"
@@ -81,7 +81,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: "ubuntu-latest"
-          path: ${{env.OUTPUT_DIRECTORY}}
 
       - name: "Dotnet NuGet Add Source"
         run: dotnet nuget add source https://nuget.pkg.github.com/dshateri/index.json --name GitHub --username ${{github.actor}} --password ${{secrets.GITHUB_TOKEN}} --store-password-in-clear-text
