@@ -73,6 +73,9 @@ jobs:
 
     if: github.ref == 'refs/heads/main' || github.event_name == 'release'
 
+    permissions:
+      packages: write
+
     runs-on: ubuntu-latest
 
     steps:
