@@ -18,7 +18,7 @@ env:
   # Disable sending .NET CLI telemetry to Microsoft.
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   # Set the build number in MinVer.
-  MINVERBUILDMETADATA: build.${{github.run_number}}
+  MinVerBuildMetadata: build.${{github.run_number}}
   # Nuget source URL for GitHub Packages.
   NUGET_SOURCE_URL: "https://nuget.pkg.github.com/dshateri/index.json"
   # Project Path for the .NET CLI.
